@@ -35,11 +35,11 @@ O Git possui muita segurança e isso se deve a como as coisas são feitas dentro
     _Exemplo Bloco Blob_
     
     </div>
-    
+  
 + **Trees**
 
   - Armazenam os Blobs, onde podem apontar para Blobs ou para outras Trees, pois existe a possibilidade de diretórios estarem dentro de outros diretórios. Tambem Possuem um SHA1, que muda caso o SHA1 do Blob sejá alterado, uma vez que estão inter-relacionados
-     
+    
     <div align="center"> 
     
     ![img](https://lh5.googleusercontent.com/gyDGR_gIIKtFPprEwV8No42vwGK3uRYsldWylVngTYib4h_OvJ97QaalC2K46eSrvXTvYE4DXBgYKDmZXmt240LNi7llgIAWPjC_GzC8AUMby3-Kwe1mY9dlhZ7JPk8CctoLZC43M64jk_bLo_ikpkGDKo5jkDENjXT3h5qw3sa8B5WEI8fUr126_g) 
@@ -47,7 +47,7 @@ O Git possui muita segurança e isso se deve a como as coisas são feitas dentro
     _Exemplo inter-relacionamento entre Trees e Bobs_
     
     </div> 
-    
+  
 + **Commits**
 
   - Os Commits apontam para arvores que apontam para Blobs que contem arquivos. Além disso ele também possui seu próprio SHA1. O Commit sempre aponta para os seus parentes, ou seja, aos Commits mais antigos e possuem o nome do autor do Commit, a mensagem de alteração, e o carimbo de tempo da alteração. Seu SHA1 é o Hash de toda a informação.
@@ -72,7 +72,7 @@ Para estabelecer uma conexão entre o Git e o Github existem duas possibilidades
 
 </div>
 
-> Após entrar nas configurações é importante acessar no menu lateral esquerdo a opção "SSH and GPC keys". Depois de entrar nessas configurações é importante cliclar em <span style="color:red">**New SSH key**</span>. 
+> Após entrar nas configurações é importante acessar no menu lateral esquerdo a opção "SSH and GPC keys". Depois de entrar nessas configurações é importante cliclar em **New SSH key**. 
 
 <div align="center"> 
 
@@ -99,3 +99,53 @@ Para estabelecer uma conexão entre o Git e o Github existem duas possibilidades
 ![img](https://media.discordapp.net/attachments/1029775754407452754/1029776007772782642/chrome_GeWFiQG8EW.png?width=709&height=434)
 
 </div>
+
+
+
+## Como criar um repositório?
+
+Os repositórios são locais para armazenar projetos. Criar um repositório é algo bem simples, podendo ser feito a partir dos seguintes passos: 
+
+
+
+> Entrar na tela inicial do github e selecionar **Repositories**. Após isso selecionar **New** no canto superior direito. 
+
+![](C:\Users\mrcra\Documents\ShareX\Screenshots\2022-10\chrome_LNhr6imChI.png)
+
+
+
+> Dar um nome e uma descrição ao seu projeto. 
+
+![chrome_b3WyM3ppzy](C:\Users\mrcra\Documents\ShareX\Screenshots\2022-10\chrome_b3WyM3ppzy.png)
+
+> Então é necessário ir até a pasta onde se encontra o seu projeto, clicar com o botão direito e selecionar Git Bash Here.
+
+![image-20221012124808555](C:\Users\mrcra\AppData\Roaming\Typora\typora-user-images\image-20221012124808555.png)
+
+> Os comandos necessários para exportar seu projeto para o Github são
+>
+> $ **git init** // Inicia o git na pasta
+>
+> $ **git add .** // Adiciona todos os arquivos a serem commitados
+>
+> $ **git commit -m "meu primeiro commit"** // Commita as informações que serão enviadas para o Github
+>
+> $ **git status** // Verifica se tudo está ocorrendo corretamente e se os dados estão prontos para serem enviados
+>
+> $ **git branch -M main** // Entra na branch main
+>
+> $ **git push origin main** // Insere os arquivos no github
+>
+> Alguns outros comandos muito importantes no processo são
+>
+> $ **git pull origin main** // Caso tenha feito as alterações em um projeto que já está no Github, mas não possui esse projeto atualizado no seu computador, será necessario implementar esse comando, para trazer o projeto para seu computador e junta-lo com o que você ja possui, que está desatualizado
+>
+> $ **clear OU ctrl + l** // Limpa a tela
+>
+> $ **pwd**  // Mostra o caminho do diretório aonde você se encontra
+>
+> $ **ls** // semelhante ao dir, é responsavel por listar os arquivos dentro de um diretório
+>
+> $ **git clone** // Clona um repositório para seu o computador
+>
+> $ **git revert** // Volta para o commit
