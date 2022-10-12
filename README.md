@@ -28,7 +28,7 @@ O Git possui muita segurança e isso se deve a como as coisas são feitas dentro
 
   - São os tipos de objetos utilizados para armazenar o conteúdo de cada arquivo de um repositório, ou seja, o bloco básico da composição. Cada Blob possui seu próprio SHA1.
 
-    ![img](https://lh6.googleusercontent.com/ozNMHb3B1G2NqctyF7pY4jRthcR9i8ye6ye-6lQ6aigt6TjmC3QXC_qm12XQwMCsHjRXFFZ5VultD_XY5tohV29N_myTkgBPJl08snlerwDNJ1IrsoyQ5Qw8x2D0rqzwXYdHMIS5YRkAHX1d2B1Y4B46wKHyo4OxRF5mUqGMWHHA0TkSsDYg00ISvw){ width: 50px; height: 50px; }
+    ![img](https://lh6.googleusercontent.com/ozNMHb3B1G2NqctyF7pY4jRthcR9i8ye6ye-6lQ6aigt6TjmC3QXC_qm12XQwMCsHjRXFFZ5VultD_XY5tohV29N_myTkgBPJl08snlerwDNJ1IrsoyQ5Qw8x2D0rqzwXYdHMIS5YRkAHX1d2B1Y4B46wKHyo4OxRF5mUqGMWHHA0TkSsDYg00ISvw)
 
     ​																		 Exemplo Bloco Blob
 
