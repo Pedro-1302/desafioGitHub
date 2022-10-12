@@ -50,7 +50,7 @@ O Git possui muita segurança e isso se deve a como as coisas são feitas dentro
   
 + **Commits**
 
-  - Os Commits apontam para arvores que apontam para Blobs que contem arquivos. Além disso ele também possui seu próprio SHA1. O Commit sempre aponta para os seus parentes, ou seja, aos Commits mais antigos e possuem o nome do autor do Commit, a mensagem de alteração, e o carimbo de tempo da alteração. Seu SHA1 é o Hash de toda a informação.
+  - Os Commits apontam para arvores que apontam para Blobs que contem arquivos. Além disso ele também possui seu próprio SHA1. O Commit sempre aponta para os seus parentes, ou seja, aos Commits mais antigos, além disso, possuem o nome do autor do Commit, a mensagem de alteração e o carimbo de tempo da alteração. Seu SHA1 é o Hash de toda a informação.
 
     
 
