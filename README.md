@@ -14,7 +14,7 @@ O Git é um sistema distribuído de controle de versões, extremamente seguro e 
 
 
 
-A resposta é **não**, ambos são ferramentas diferentes, que possuem funções de se complementarem. O **Git** é uma ferramenta que está mais relacionada ao CLI (Command Line Interface), ou seja, por meio de códigos há a possibilidade de navegação entre branches, de serem feitos novos commits e de diversas outras funções. Já o **Github** possui uma GUI (Graphical User Interface), ou seja, uma interface visual. Além disso o Github se porta como um local para que desenvolvedores de softwares possam armazenar seus repositórios. 
+A resposta é **não**, ambos são ferramentas diferentes, que possuem funções de se complementarem. O **[Git](https://git-scm.com/)** é uma ferramenta que está mais relacionada ao CLI (Command Line Interface), ou seja, por meio de códigos há a possibilidade de navegação entre branches, de serem feitos novos commits e de diversas outras funções. Já o **[Github](https://github.com/)** possui uma GUI (Graphical User Interface), ou seja, uma interface visual. Além disso o Github se porta como um local para que desenvolvedores de softwares possam armazenar seus repositórios. 
 
 
 
@@ -22,7 +22,7 @@ A resposta é **não**, ambos são ferramentas diferentes, que possuem funções
 
 
 
-O Git possui muita segurança e isso se deve a como as coisas são feitas dentro dessa ferramenta. A segurança está quase toda relacionada ao **SHA1**, uma função de criptografia. Ela se resume em alguns pontos:
+O Git possui muita segurança e isso se deve a como as coisas são feitas dentro dessa ferramenta. A segurança está quase toda relacionada ao **[SHA1](https://youtu.be/MQtHLn3dvQg)**, uma função de criptografia. Ela se resume em alguns pontos:
 
 + **Blobs**
 
@@ -50,7 +50,7 @@ O Git possui muita segurança e isso se deve a como as coisas são feitas dentro
   
 + **Commits**
 
-  - Os Commits apontam para arvores que apontam para Blobs que contem arquivos. Além disso ele também possui seu próprio SHA1. O Commit sempre aponta para os seus parentes, ou seja, aos Commits mais antigos, além disso, possuem o nome do autor do Commit, a mensagem de alteração e o carimbo de tempo da alteração. Seu SHA1 é o Hash de toda a informação.
+  - Os Commits apontam para arvores que apontam para Blobs que contem arquivos. Além disso ele também possui seu próprio SHA1. O Commit sempre aponta para os seus parentes, ou seja, aos Commits mais antigos, além disso, possuem o nome do autor do Commit, a mensagem de alteração e o carimbo de tempo da alteração. Seu SHA1 é o **[Hash](https://youtu.be/HMwIQLVM8Iw)** de toda a informação.
 
     
 
