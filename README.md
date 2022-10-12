@@ -82,15 +82,21 @@ Para estabelecer uma conexão entre o Git e o Github existem duas possibilidades
 
 > Então é necessário gerar uma chave SSH a partir do CLI (Git Bash), através dos seguintes comandos:
 >
-> $ **ssh-keygen -t ed25519 -C "aqui vai seu email"**  // Cria sua chave Pública
+> $ **ssh-keygen -t ed25519 -C "aqui vai seu email"**    // Cria sua chave Pública
 >
-> $ **cd C:\Users\mrcra\.ssh** // Entra na pasta aonde está suas chaves. Obs: mrcra é meu usuario, é necessario substituir pelo seu  
+> Dentro do seu disco (C:) clique com o botão direito, abra o Git Bash e acesse:  
 >
-> $ **pwd**  // Mostra o caminho do diretório aonde você se encontra
+> $ **cd Users/**   // Entra na pasta usuários
+>
+> $ **cd mrcra/**   // Entra no seu usuário. Obs: mrcra é meu usuario, é necessario substituir pelo seu 
+>
+> $ **cd .ssh/**   // Entra na pasta aonde está suas chaves.
 > 
-> $ **ls** // Mostra o que está dentro da pasta. Note que aparecerão duas chaves, uma delas é pública (.pub) e a outra privada
+> $ **pwd**   // Mostra o caminho do diretório aonde você se encontra
 > 
-> $ **cat id_ed25519.pub** // Mostra sua chave Pública
+> $ **ls**   // Mostra o que está dentro da pasta. Note que aparecerão duas chaves, uma delas é pública (.pub) e a outra privada
+> 
+> $ **cat id_ed25519.pub**   // Mostra sua chave Pública
 >
 > Com esse comando você mostra sua chave Pública que será colocada no Github. Você também possui uma outra chave privada, que é utilizada em outros processos. Após gerar a chave é necessário inseri-la no Github. 
 
@@ -104,48 +110,62 @@ Para estabelecer uma conexão entre o Git e o Github existem duas possibilidades
 
 ## Como criar um repositório?
 
+
+
 Os repositórios são locais para armazenar projetos. Criar um repositório é algo bem simples, podendo ser feito a partir dos seguintes passos: 
-
-
 
 > Entrar na tela inicial do github e selecionar **Repositories**. Após isso selecionar **New** no canto superior direito. 
 
-![](C:\Users\mrcra\Documents\ShareX\Screenshots\2022-10\chrome_LNhr6imChI.png)
+<div align="center"> 
 
+![img](https://media.discordapp.net/attachments/1029775754407452754/1029788242372997150/chrome_LNhr6imChI.png)
 
+</div>
 
 > Dar um nome e uma descrição ao seu projeto. 
 
-![chrome_b3WyM3ppzy](C:\Users\mrcra\Documents\ShareX\Screenshots\2022-10\chrome_b3WyM3ppzy.png)
+<div align="center"> 
+
+![img](https://media.discordapp.net/attachments/1029775754407452754/1029789145129820170/chrome_b3WyM3ppzy.png?width=436&height=434)
+
+</div>
 
 > Então é necessário ir até a pasta onde se encontra o seu projeto, clicar com o botão direito e selecionar Git Bash Here.
 
-![image-20221012124808555](C:\Users\mrcra\AppData\Roaming\Typora\typora-user-images\image-20221012124808555.png)
+<div align="center"> 
+
+![img](https://media.discordapp.net/attachments/1029775754407452754/1029788085795430500/3Dnvk1thwK.png)
+
+</div>
 
 > Os comandos necessários para exportar seu projeto para o Github são
 >
-> $ **git init** // Inicia o git na pasta
+> $ **git init**   // Inicia o git na pasta
 >
-> $ **git add .** // Adiciona todos os arquivos a serem commitados
+> $ **git add .**   // Adiciona todos os arquivos a serem commitados
 >
-> $ **git commit -m "meu primeiro commit"** // Commita as informações que serão enviadas para o Github
+> $ **git commit -m "meu primeiro commit"**   // Commita as informações que serão enviadas para o Github
 >
-> $ **git status** // Verifica se tudo está ocorrendo corretamente e se os dados estão prontos para serem enviados
+> $ **git status**   // Verifica se tudo está ocorrendo corretamente e se os dados estão prontos para serem enviados
 >
-> $ **git branch -M main** // Entra na branch main
+> $ **git branch -M main**   // Entra na branch main
 >
-> $ **git push origin main** // Insere os arquivos no github
+> $ **git push origin main**   // Insere os arquivos no github
 >
-> Alguns outros comandos muito importantes no processo são
+
+
+### Alguns outros comandos muito importantes no processo são
+
+
+
+> $ **git pull origin main**   // Caso tenha feito as alterações em um projeto que já está no Github, mas não possui esse projeto atualizado no seu computador, será necessario implementar esse comando, para trazer o projeto para seu computador e junta-lo com o que você ja possui, que está desatualizado
 >
-> $ **git pull origin main** // Caso tenha feito as alterações em um projeto que já está no Github, mas não possui esse projeto atualizado no seu computador, será necessario implementar esse comando, para trazer o projeto para seu computador e junta-lo com o que você ja possui, que está desatualizado
+> $ **clear OU ctrl + l**   // Limpa a tela
 >
-> $ **clear OU ctrl + l** // Limpa a tela
+> $ **pwd**   // Mostra o caminho do diretório aonde você se encontra
 >
-> $ **pwd**  // Mostra o caminho do diretório aonde você se encontra
+> $ **ls**   // semelhante ao dir, é responsavel por listar os arquivos dentro de um diretório
 >
-> $ **ls** // semelhante ao dir, é responsavel por listar os arquivos dentro de um diretório
+> $ **git clone**   // Clona um repositório para seu o computador
 >
-> $ **git clone** // Clona um repositório para seu o computador
->
-> $ **git revert** // Volta para o commit
+> $ **git revert**   // Volta para o commit
