@@ -84,11 +84,15 @@ Para estabelecer uma conexão entre o Git e o Github existem duas possibilidades
 >
 > $ **ssh-keygen -t ed25519 -C "aqui vai seu email"**  // Cria sua chave Pública
 >
-> $ **cat id_ed25519.pub**  //Mostra sua chave Publica
+> $ **cd C:\Users\mrcra\.ssh** // Entra na pasta aonde está suas chaves. Obs: mrcra é meu usuario, é necessario substituir pelo seu  
 >
-> $ **pwd**  // Mostra o caminho do diretório onde você se encontra
+> $ **pwd**  // Mostra o caminho do diretório aonde você se encontra
+> 
+> $ **ls** // Mostra o que está dentro da pasta. Note que aparecerão duas chaves, uma delas é pública (.pub) e a outra privada
+> 
+> $ **cat id_ed25519.pub** // Mostra sua chave Pública
 >
-> Com esse comando você mostra sua chave Publica que será colocada no Github. Você também possui uma outra chave privada, que é utilizada em outros processos. Após gerar a chave é necessário inseri-la no Github. 
+> Com esse comando você mostra sua chave Pública que será colocada no Github. Você também possui uma outra chave privada, que é utilizada em outros processos. Após gerar a chave é necessário inseri-la no Github. 
 
 <div align="center"> 
 
